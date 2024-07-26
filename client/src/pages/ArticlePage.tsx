@@ -14,12 +14,13 @@ const ArticlePage = () => {
   return (
     <MacContainer customStyles='space-y-2'>
         <p className='text-4xl font-semibold tracking-wide'>{article?.title}</p>
-        <div className='flex gap-4'>
+        <div className='flex items-center gap-4'>
           <p className='font-semibold text-yellow-200'>
             {formatDate(article?.createdAt!)}
           </p>
           <div>
-            {article?.tags?.map((tag) => <Link to={`/blog/${tag}`} className='px-2 py-1 rounded bg-primary' key={tag}>
+            {article?.tags?.map((tag) => <Link to={`/blog/${tag}`} className='px-2 py-1 rounded bg-primary tooltip' key={tag}>
+              <span className='tooltiptext'>Go to {tag} articles</span>
               {tag}
             </Link>)}
           </div>
