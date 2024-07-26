@@ -23,4 +23,9 @@ export const markdownOptions = {
           className: 'text-lg',
         },
       },
+      a: {
+        props: {
+          className: 'underline decoration-dashed underline-offset-4',
+        },
+      },
   }};
