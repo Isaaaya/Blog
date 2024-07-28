@@ -28,4 +28,19 @@ export const markdownOptions = {
           className: 'underline decoration-dashed underline-offset-4',
         },
       },
+      ins: {
+        props: {
+          className: 'text-underlined underline-offset-4',
+        },
+      },
+      img: {
+        props: {
+          className: ' mx-auto rounded-lg overflow-hidden',
+        },
+      },
+      iframe: {
+        props: {
+          className: 'mx-auto',
+        },
+      }
   }};

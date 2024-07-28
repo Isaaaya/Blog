@@ -7,7 +7,7 @@ interface MacContainerProps {
 
 const MacContainer: React.FC<MacContainerProps> = ({ children, customStyles }) => {
   return (
-    <section className='container overflow-hidden rounded bg-primaryDark'>
+    <section className='container overflow-hidden rounded bg-primaryDark min-h-[25rem]'>
         <div className='w-full gap-2 h-[1.3rem] bg-gray-100 flex items-center px-2'>
             <div className='w-3 h-3 bg-pink-300 rounded-full' />
             <div className='w-3 h-3 bg-blue-300 rounded-full' />
