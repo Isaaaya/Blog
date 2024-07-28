@@ -2,9 +2,9 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const ArticleRoutes = require('./routes/article');
+const ArticleRoutes = require('./routes/article.ts');
 
-const {connectToDB} = require('./config/connectToDB');
+const {connectToDB} = require('./config/connectToDB.ts');
 const port = process.env.PORT || 5001;
 
 const start = () => {

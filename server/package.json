@@ -4,7 +4,8 @@
   "description": "API for the blog web site",
   "main": "index.ts",
   "scripts": {
-    "dev": "nodemon index.ts"
+    "dev": "node index.ts",
+    "production": "npx tsx index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,7 @@
     "@types/node": "^20.14.12",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.4",
+    "tsx": "^4.16.2",
     "typescript": "^5.5.4"
   },
   "dependencies": {
