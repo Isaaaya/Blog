@@ -6,11 +6,18 @@ import { formatDate } from '../helpers/formatDate';
 import Markdown from 'markdown-to-jsx'
 import { markdownOptions } from '../constants';
 import Loader from '../components/common/Loader';
+import Prism from "prismjs";
+import "../prism.css";
+import { useEffect } from 'react';
 
 const ArticlePage = () => {
   const {slug} = useParams();
   const {article, isLoading} = useArticle(slug!);
   useDocumentTitle(article?.title || '');
+
+  useEffect(() => {
+    if (article?.content) Prism.highlightAll();
+  }, [article?.content])
 
   return (
     <MacContainer customStyles='space-y-2'>

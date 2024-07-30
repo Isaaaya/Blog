@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.isaaaya.site';
+export const BASE_URL = 'https://blog.isaaaya.online';
 
 export const markdownOptions = {
     forceBlock: true,
@@ -41,6 +41,11 @@ export const markdownOptions = {
       iframe: {
         props: {
           className: 'mx-auto',
+        },
+      },
+      code: {
+        props: {
+          className: 'language-js',
         },
       }
   }};
