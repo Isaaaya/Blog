@@ -4,7 +4,7 @@
   "description": "API for the blog web site",
   "main": "index.ts",
   "scripts": {
-    "dev": "node index.ts",
+    "dev": "nodemon index.ts",
     "production": "npx tsx index.ts"
   },
   "author": "",
