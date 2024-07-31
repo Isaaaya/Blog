@@ -15,33 +15,3 @@ html {
   max-width: 95%;
   margin: 0 auto;
 }
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  min-width: 150px;
-  background-color: rgb(106, 103, 103);
-  color: #fff;
-  text-align: center;
-  padding: 5px;
-  border-radius: 6px;
-  position: absolute;
-  z-index: 1;
-  top: 120%;
-  left: 50%;
-  margin-left: -70px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}

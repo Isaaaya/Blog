@@ -35,12 +35,12 @@ export const markdownOptions = {
       },
       img: {
         props: {
-          className: ' mx-auto rounded-lg overflow-hidden',
+          className: 'mx-auto rounded-lg overflow-hidden',
         },
       },
       iframe: {
         props: {
-          className: 'mx-auto',
+          className: 'mx-auto w-full md:h-[60vh] h-[300px]',
         },
       },
       code: {

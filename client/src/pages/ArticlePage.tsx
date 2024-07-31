@@ -22,19 +22,17 @@ const ArticlePage = () => {
   return (
     <MacContainer customStyles='space-y-2'>
         <p className='text-4xl font-semibold tracking-wide min-h-10'>{article?.title}</p>
-        <div className='flex items-center gap-4 mb-10'>
-          <p className='font-semibold text-yellow-200'>
+        <div className='flex items-center gap-4'>
+          <p className='font-semibold text-yellow-200 min-w-[105px]'>
             {article?.createdAt && formatDate(article?.createdAt)}
           </p>
-          <div className='flex items-center gap-2 min-h-12'>
-            {article?.tags?.map((tag) => <Link to={`/blog/${tag}`} className='px-2 py-1 rounded bg-primary tooltip h-fit' key={tag}>
-              <span className='tooltiptext'>
-                Go to {tag} articles
-              </span>
-              {tag}
-            </Link>)}
-          </div>
+        <div className='flex items-center gap-2 overflow-x-auto w-content'>
+          {article?.tags?.map((tag) => <Link to={`/blog/${tag}`} className='px-2 py-1 rounded bg-primary h-fit' key={tag}>
+            {tag}
+          </Link>)}
+        </div>
         </div> 
+        <div className='h-10' />
         {isLoading ? 
         <Loader size='medium' /> : 
         <Markdown options={markdownOptions}>
